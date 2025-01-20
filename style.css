@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+}
+
+
+body, .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    justify-content: center;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+}
+
+.navbar .nav-link.underline {
+    position: relative;
+}
+
+.navbar .nav-link.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar .nav-link.underline:hover::after,
+.navbar .nav-link.underline.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    align-items: center;
+}
+
+.card h4 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: rgb(2, 2, 69);
+    font-size: 20px;
+}
+
+.card h1 {
+    font-family: Garamond;
+    font-weight: 900;
+    font-size: 70px;
+    color: rgb(2, 2, 69);
+}
+
+.card-body p {
+    font-family: Arial, sans-serif;
+    color: #020245;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+
+img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+}
+
+h5 {
+    text-align: justify;
+    font-family: Garamond, serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.zoom-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom-hover:hover {
+    transform: scale(0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.large-figure .figure-img {
+    width: 600px; /* Membuat gambar menempati seluruh lebar kolom */
+    height: auto;
+}
+
+.large-figure {
+    font-size: 1.2rem; /* Menyesuaikan ukuran teks dalam figur */
+}
+
+.figure {
+    font-size: 1rem; /* Ukuran teks default dalam figur */
+}
+
+.card-text {
+    border-bottom: 2px solid #ccc; /* Mengatur garis bawah */
+    padding-bottom: 10px; /* Menambahkan padding bawah agar garis tidak terlalu dekat dengan teks */
+    margin-bottom: 15px; /* Mengatur jarak margin bawah untuk memberi ruang antara garis dan elemen berikutnya */
+}
+
+.zoom-section .card {
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.321);
+}
+
+.zoom-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+
+.footer {
+    background-color: #ebebebe1;
+    color: rgb(6, 6, 6);
+    padding: 40px 0;
+}
+
+.footer a {
+    color: #2c29ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #2c29ff;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: black;
+}
+
+.footer .social-icons a {
+    color: black;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: #2c29ff;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .row {
+    justify-content: center;
+    width: 100%;
+}
